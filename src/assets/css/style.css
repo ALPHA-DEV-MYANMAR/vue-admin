@@ -1,0 +1,51 @@
+:root{
+    --bg-color: #fafaf6;
+}
+
+.sidebar{
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.menu{
+    list-style: none;
+}
+
+/*.menu-item{*/
+/*    background-color: aqua;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+.active{
+    padding : 10px;
+    transition: 0.5s;
+    background-color: #3b82f6;
+    border-radius: 10px;
+}
+
+.input-weight{
+    width: 25% !important;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .sidebar {
+        position: fixed;
+        height: 100vh;
+        overflow: scroll;
+    }
+    .input-weight{
+        width:100% !important;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .sidebar {
+        position: fixed;
+        z-index: 2000;
+        overflow: scroll;
+    }
+    .input-weight{
+        width:100% !important;
+    }
+}
